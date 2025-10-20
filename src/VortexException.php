@@ -1,0 +1,16 @@
+<?php
+
+namespace TeamVortexSoftware\VortexSDK;
+
+use Exception;
+
+/**
+ * Exception thrown when Vortex API operations fail
+ */
+class VortexException extends Exception
+{
+    public function __construct(string $message = "", int $code = 0, ?Exception $previous = null)
+    {
+        parent::__construct($message, $code, $previous);
+    }
+}
