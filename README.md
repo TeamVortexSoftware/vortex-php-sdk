@@ -47,8 +47,8 @@ $identifiers = [
 
 // Groups the user belongs to (specific to your product)
 $groups = [
-    ['type' => 'workspace', 'id' => 'workspace-123', 'name' => 'My Workspace'],
-    ['type' => 'document', 'id' => 'doc-456', 'name' => 'Project Plan']
+    ['type' => 'workspace', 'groupId' => 'workspace-123', 'name' => 'My Workspace'],
+    ['type' => 'document', 'groupId' => 'doc-456', 'name' => 'Project Plan']
 ];
 
 // User role (if applicable)
@@ -112,7 +112,7 @@ class VortexController extends Controller
             ],
             groups: $user->groups->map(fn($g) => [
                 'type' => $g->type,
-                'id' => $g->id,
+                'groupId' => $g->id,
                 'name' => $g->name
             ])->toArray(),
             role: $user->role
