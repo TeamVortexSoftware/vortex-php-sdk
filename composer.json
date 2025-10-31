@@ -1,6 +1,7 @@
 {
     "name": "teamvortexsoftware/vortex-php-sdk",
     "description": "Vortex PHP SDK for authentication and invitation management",
+    "version": "1.0.0",
     "type": "library",
     "license": "MIT",
     "authors": [
